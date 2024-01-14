@@ -47,7 +47,9 @@ public class Romes extends Number {
     @Override
     public void sub() {
         result_int = romes_value1_int - romes_value2_int;
-        result_string = convert_result_to_Romes(result_int, result_int);
+        if(result_int>=0) {
+            result_string = convert_result_to_Romes(result_int, result_int);
+        } else System.out.print("В римских числах не предусмотрено отрицательных значений ");
     }
 
     @Override
